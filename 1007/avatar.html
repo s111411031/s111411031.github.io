@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>六邊形頭像展示</title>
+  <style>
+    body {
+      background: #f3f4f6;
+      font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+    }
+    .avatar-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .avatar-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+      width: auto;
+    }
+    .hexagon-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      background: #fff;
+      border: 5px solid #6366f1;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      clip-path: polygon(
+        50% 0%,
+        93% 25%,
+        93% 75%,
+        50% 100%,
+        7% 75%,
+        7% 25%
+      );
+    }
+    .desc-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1;
+    }
+    .desc-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #6366f1;
+      margin-bottom: 8px;
+    }
+    .desc-content {
+      font-size: 1rem;
+      color: #374151;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="avatar-row">
+    <div class="avatar-block">
+      <img class="hexagon-img" src="https://randomuser.me/api/portraits/men/32.jpg" alt="頭像1">
+      <div class="desc-block">
+        <div class="desc-title">王小明</div>
+        <div class="desc-content">熱愛攝影與旅行，喜歡探索世界的美好。</div>
+      </div>
+    </div>
+    <div class="avatar-block">
+      <img class="hexagon-img" src="https://randomuser.me/api/portraits/women/44.jpg" alt="頭像2">
+      <div class="desc-block">
+        <div class="desc-title">李美麗</div>
+        <div class="desc-content">專業設計師，擅長UI/UX與插畫創作。</div>
+      </div>
+    </div>
+    <div class="avatar-block">
+      <img class="hexagon-img" src="https://randomuser.me/api/portraits/men/65.jpg" alt="頭像3">
+      <div class="desc-block">
+        <div class="desc-title">陳大志</div>
+        <div class="desc-content">前端工程師，熱衷於新技術與程式開發。</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
