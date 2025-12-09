@@ -1,0 +1,58 @@
+<div class="contact-bar">
+  <span class="contact-label">Email</span>
+  <a class="contact-value" href="mailto:111411031@stu.ntue.edu.tw">111411031@stu.ntue.edu.tw</a>
+  <span class="divider">|</span>
+  <span class="contact-label">Instagram</span>
+  <a class="contact-value" href="https://www.instagram.com/schy0_315/" target="_blank">schy0_315</a>
+  <span class="divider">|</span>
+  <span class="contact-label">電話</span>
+  <span class="contact-value">0976-288-235</span>
+</div>
+
+<style>
+.contact-bar {
+  max-width: 900px;
+  margin: 48px auto;
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 24px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-family: 'Segoe UI', 'Noto Sans TC', Arial, sans-serif;
+}
+.contact-label {
+  font-size: 1.08em;
+  font-weight: 700;
+  color: #222;
+  margin-right: 6px;
+}
+.contact-value {
+  font-size: 1.08em;
+  color: #222;
+  text-decoration: none;
+  font-weight: 400;
+  margin-right: 12px;
+  transition: color 0.2s;
+}
+.contact-bar a.contact-value:hover {
+  color: #0078d4;
+}
+.divider {
+  color: #bbb;
+  font-size: 1.2em;
+  margin: 0 8px;
+}
+@media (max-width: 700px) {
+  .contact-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 20px 10px;
+  }
+  .divider {
+    display: none;
+  }
+}
+</style>
