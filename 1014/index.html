@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>個人名片</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .card-container {
+      display: flex;
+      max-width: 500px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+      overflow: hidden;
+    }
+    .card-left {
+      background: linear-gradient(135deg, #6366f1 0%, #f43f5e 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      padding: 32px 0;
+    }
+    .hexagon-avatar {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 6px solid #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      background: #fff;
+      clip-path: polygon(
+        50% 0%,
+        93% 25%,
+        93% 75%,
+        50% 100%,
+        7% 75%,
+        7% 25%
+      );
+    }
+    .card-right {
+      width: 60%;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #374151;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 1.1rem;
+      color: #6366f1;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+    .info {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+    .contact {
+      font-size: 0.95rem;
+      color: #f43f5e;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card-left">
+      <img class="hexagon-avatar" src="IMG_2253.jpg" alt="個人照片">
+    </div>
+    <div class="card-right">
+      <div class="name">沈靖堯</div>
+      <div class="title">前端工程師</div>
+      <div class="info">台北市大安區</div>
+      <div class="info">專長：網頁設計、UI/UX、JavaScript</div>
+      <div class="contact">Email: shen.chingyao@example.com</div>
+      <div class="contact">電話: 0912-345-678</div>
+    </div>
+  </div>
+</body>
+</html>
