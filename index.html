@@ -17,6 +17,44 @@
   </div>
 </div>
 
+<!-- 五個區塊的網站預覽區 -->
+<div class="preview-section">
+  <div class="preview-grid">
+    <a class="preview-block" href="https://s111411031.github.io/0930" target="_blank">
+      <img src="0930/Gemini_Generated_Image_9qbqpj9qbqpj9qbq.png" alt="0930 預覽圖">
+      <div class="preview-title">0930</div>
+    </a>
+    <a class="preview-block" href="https://s111411031.github.io/1007" target="_blank">
+      <img src="1007/46848289864_3cb4509a6b_c.jpg" alt="1007 預覽圖">
+      <div class="preview-title">1007</div>
+    </a>
+    <a class="preview-block" href="https://s111411031.github.io/1014" target="_blank">
+      <img src="1014/IMG_2253.jpg" alt="1014 預覽圖">
+      <div class="preview-title">1014</div>
+    </a>
+    <a class="preview-block" href="https://s111411031.github.io/1118" target="_blank">
+      <img src="1118-preview.png" alt="1118 預覽圖">
+      <div class="preview-title">1118</div>
+    </a>
+    <a class="preview-block" href="https://s111411031.github.io/1125" target="_blank">
+     <img src="1125-preview.png" alt="1125 預覽圖">
+      <div class="preview-title">1125</div>
+    </a>
+  </div>
+</div>
+
+<!-- 技能區塊 -->
+<div class="skills-section">
+  <div class="skills-title">學到的技能</div>
+  <div class="skills-list">
+    <div class="skill-item">HTML</div>
+    <div class="skill-item">CSS</div>
+    <div class="skill-item">BootStrap</div>
+    <div class="skill-item">AI使用</div>
+    <div class="skill-item">網站賞析</div>
+  </div>
+</div>
+
 <div class="contact-bar">
   <span class="contact-label">Email</span>
   <a class="contact-value" href="mailto:111411031@stu.ntue.edu.tw">111411031@stu.ntue.edu.tw</a>
@@ -27,7 +65,6 @@
   <span class="contact-label">電話</span>
   <span class="contact-value">0976-288-235</span>
 </div>
-
 <script>
 function toggleDropdown() {
   var content = document.getElementById('dropdownContent');
@@ -38,103 +75,67 @@ function toggleDropdown() {
 </script>
 
 <style>
-/* 導覽列樣式 */
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  font-family: 'Segoe UI', 'Noto Sans TC', '微軟正黑體', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #23272f;
+}
 .top-nav {
-  background: linear-gradient(90deg, #ffffff, #f8fbff);
-  padding: 16px 0;
-  border-bottom: 1px solid #e9eef6;
+  background: linear-gradient(90deg, #4f8cff 0%, #a7bfff 100%);
+  padding: 22px 0 14px 0;
+  border-bottom: 1.5px solid #e0e7ef;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.07);
 }
 .top-nav .nav-inner {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 .site-title {
-  font-size: 1.08rem;
+  font-size: 1.25rem;
   margin: 0;
-  font-weight: 700;
-  color: #111;
-  font-family: 'Segoe UI', 'Noto Sans TC', Arial, sans-serif;
+  font-weight: 800;
+  color: #1a237e;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #e3eaff;
 }
 .site-desc {
-  margin: 6px 0 0;
-  font-size: 0.98rem;
-  color: #4b5563;
+  margin: 8px 0 0;
+  font-size: 1.05rem;
+  color: #374151;
+  letter-spacing: 1px;
 }
 
-.contact-bar {
-  max-width: 900px;
-  margin: 48px auto;
-  background: #f2f2f2;
-  border-radius: 12px;
-  padding: 24px 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  font-family: 'Segoe UI', 'Noto Sans TC', Arial, sans-serif;
-}
-.contact-label {
-  font-size: 1.08em;
-  font-weight: 700;
-  color: #222;
-  margin-right: 6px;
-}
-.contact-value {
-  font-size: 1.08em;
-  color: #222;
-  text-decoration: none;
-  font-weight: 400;
-  margin-right: 12px;
-  transition: color 0.2s;
-}
-.contact-bar a.contact-value:hover {
-  color: #0078d4;
-}
-.divider {
-  color: #bbb;
-  font-size: 1.2em;
-  margin: 0 8px;
-}
-@media (max-width: 700px) {
-  .contact-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    padding: 20px 10px;
-  }
-  .divider {
-    display: none;
-  }
-}
-
-/* 課程介紹區塊樣式 */
 .course-intro {
-  max-width: 900px;
+  max-width: 950px;
   margin: 32px auto 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 .dropdown-btn {
   width: 100%;
-  background: #0078d4;
+  background: linear-gradient(90deg, #4f8cff 0%, #a7bfff 100%);
   color: #fff;
-  font-size: 1.08em;
+  font-size: 1.12em;
   font-weight: 700;
   border: none;
-  border-radius: 8px 8px 0 0;
-  padding: 14px 18px;
+  border-radius: 12px 12px 0 0;
+  padding: 16px 22px;
   cursor: pointer;
   text-align: left;
-  transition: background 0.2s;
+  transition: background 0.2s, box-shadow 0.2s;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
 }
 .dropdown-btn:hover {
-  background: #005fa3;
+  background: linear-gradient(90deg, #3a6fd8 0%, #7ea6f8 100%);
+  box-shadow: 0 4px 16px rgba(79,140,255,0.13);
 }
 .arrow {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-left: 8px;
   transition: transform 0.25s;
 }
@@ -144,29 +145,188 @@ function toggleDropdown() {
 .dropdown-content {
   display: none;
   background: #f7fafd;
-  border: 1px solid #e0e7ef;
+  border: 1.5px solid #e0e7ef;
   border-top: none;
-  border-radius: 0 0 8px 8px;
-  padding: 18px 20px;
-  font-size: 1em;
-  color: #222;
-  line-height: 1.7;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border-radius: 0 0 12px 12px;
+  padding: 22px 26px;
+  font-size: 1.04em;
+  color: #23272f;
+  line-height: 1.8;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.07);
 }
 .dropdown-content.show {
   display: block;
 }
+
+.preview-section {
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+  padding: 0 24px 18px 24px;
+}
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 22px;
+  justify-content: center;
+}
+.preview-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(79,140,255,0.09);
+  transition: box-shadow 0.22s, transform 0.22s;
+  padding: 16px 12px 20px 12px;
+  border: 1.5px solid #e0e7ef;
+}
+.preview-block:hover {
+  box-shadow: 0 10px 32px rgba(79,140,255,0.18);
+  transform: translateY(-6px) scale(1.04);
+  border-color: #4f8cff;
+}
+.preview-block img, .preview-img-large {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f3f4f6;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.07);
+}
+.preview-img-large {
+  height: 190px;
+}
+.preview-title {
+  font-size: 1.13em;
+  color: #1a237e;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.skills-section {
+  max-width: 950px;
+  margin: 40px auto 0 auto;
+  padding: 0 24px 22px 24px;
+  background: linear-gradient(90deg, #e0e7ff 0%, #f8fafc 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.07);
+}
+.skills-title {
+  font-size: 1.22em;
+  font-weight: 800;
+  color: #1a237e;
+  margin-bottom: 18px;
+  letter-spacing: 2.5px;
+  text-shadow: 0 2px 8px #e3eaff;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 22px;
+}
+.skill-item {
+  background: linear-gradient(90deg, #4f8cff 0%, #a7bfff 100%);
+  color: #fff;
+  font-size: 1.08em;
+  font-weight: 700;
+  border-radius: 22px;
+  padding: 14px 34px;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.09);
+  transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+  cursor: default;
+  border: none;
+  letter-spacing: 1.2px;
+}
+.skill-item:hover {
+  transform: scale(1.09);
+  box-shadow: 0 8px 24px rgba(79,140,255,0.18);
+  background: linear-gradient(90deg, #3a6fd8 0%, #7ea6f8 100%);
+}
+
+.contact-bar {
+  max-width: 950px;
+  margin: 54px auto 0 auto;
+  background: linear-gradient(90deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: 16px;
+  padding: 28px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  font-family: 'Segoe UI', 'Noto Sans TC', Arial, sans-serif;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.07);
+  border: 1.5px solid #e0e7ef;
+}
+.contact-label {
+  font-size: 1.13em;
+  font-weight: 700;
+  color: #1a237e;
+  margin-right: 8px;
+  letter-spacing: 1px;
+}
+.contact-value {
+  font-size: 1.13em;
+  color: #23272f;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 16px;
+  transition: color 0.2s;
+}
+.contact-bar a.contact-value:hover {
+  color: #4f8cff;
+}
+.divider {
+  color: #b6b9c7;
+  font-size: 1.25em;
+  margin: 0 10px;
+}
+@media (max-width: 900px) {
+  .preview-grid {
+    gap: 18px 8px;
+  }
+  .preview-block {
+    width: 44vw;
+    min-width: 140px;
+    max-width: 230px;
+  }
+  .skills-section {
+    padding: 0 10px 16px 10px;
+  }
+}
 @media (max-width: 700px) {
-  .course-intro {
-    padding: 0 6px;
+  .top-nav .nav-inner, .skills-section, .course-intro, .preview-section, .contact-bar {
+    padding-left: 6px;
+    padding-right: 6px;
   }
-  .dropdown-btn {
-    font-size: 1em;
-    padding: 12px 10px;
+  .preview-section {
+    padding: 0 6px 10px 6px;
   }
-  .dropdown-content {
+  .preview-block {
+    padding: 8px 4px 10px 4px;
+  }
+  .preview-block img, .preview-img-large {
+    height: 90px;
+  }
+  .skills-list {
+    gap: 10px 8px;
+  }
+  .skill-item {
     font-size: 0.98em;
-    padding: 12px 8px;
+    padding: 9px 16px;
+  }
+  .contact-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .divider {
+    display: none;
   }
 }
 </style>
